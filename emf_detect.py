@@ -14,8 +14,8 @@ def calculate_power_dB(samples: int):
 
 def main():
     # Parameters
-    target_freq = 21e8  # 2.1 GHz (for reference, not directly tuned)
-    lo_freq = 20e8  # 2 GHz (assumed LO of Ham It Down)
+    target_freq = 21e8  # 2.1 GHz (magic number)
+    lo_freq = 15e8  # 1.5 GHz (LO of Ham It Down)
     downconverted_freq = target_freq - lo_freq  # 100 MHz
     dB_threshold = -40  # Example threshold in dB (adjust as needed)
     samples_per_read = 1024  # Number of samples per capture
